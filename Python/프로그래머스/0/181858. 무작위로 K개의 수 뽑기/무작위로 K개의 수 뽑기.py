@@ -3,9 +3,7 @@ def solution(arr, k):
     for i in arr:
         if len(answer) == k:
             break
-        if i in answer:
-            pass
-        else:
+        if i  not in answer:
             answer.append(i)
     if len(answer) < k:
         for _ in range(k-len(answer)):
