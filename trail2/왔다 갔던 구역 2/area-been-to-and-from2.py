@@ -13,7 +13,7 @@ cnt = 0
 
 for X,D in zip(x,dir):
     if D == 'L':
-        for i in range(crr,crr-X,-1):
+        for i in range(crr-X,crr): #(crr-X,crr)과 (crr,crr-X,-1) 차이 유의 ***
             arr[i] += 1
         crr -= X
     else:
