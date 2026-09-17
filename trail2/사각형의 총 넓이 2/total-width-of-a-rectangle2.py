@@ -8,11 +8,11 @@ for _ in range(n):
     y2.append(d)
 
 # Please write your code here.
-arr = [[0]*2001 for _ in range(2001)]
+arr = [[0]*201 for _ in range(201)]
 
 for i in range(n):
-    for x in range(x1[i]+1000,x2[i]+1000):
-        for y in range(y1[i]+1000,y2[i]+1000):
+    for x in range(x1[i]+100,x2[i]+100):
+        for y in range(y1[i]+100,y2[i]+100):
             arr[x][y] += 1
 
 area = 0
