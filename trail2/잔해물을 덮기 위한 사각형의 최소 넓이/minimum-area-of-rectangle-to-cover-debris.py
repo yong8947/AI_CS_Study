@@ -23,12 +23,6 @@ for i in range(len(arr)):
             arr_x.append(i)
             arr_y.append(j)
 
-max_x = max(arr_x)
-max_y = max(arr_y)
-min_x = min(arr_x)
-min_y = min(arr_y)
-square_min = (max(arr_x)-min(arr_x))*(max(arr_y)-min(arr_y))
-
 if not arr_x:
     print(0)
 else:
