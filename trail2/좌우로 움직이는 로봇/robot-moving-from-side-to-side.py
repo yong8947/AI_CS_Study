@@ -50,7 +50,7 @@ while len(pos_B) < larger:
     pos_B.append(pos_B[-1])
 
 ans = 0
-check = 'No' # 0에서 만나는 건 생각 안하기때문에 
+check = 'Yes'
 for i,j in zip(pos_A,pos_B):
     if i==j:
         if check =='No':
