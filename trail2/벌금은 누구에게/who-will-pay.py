@@ -8,3 +8,5 @@ for i in student:
     if arr.count(i) >= K:
         print(i)
         break
+if not arr:
+    print(-1)
