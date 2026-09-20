@@ -12,13 +12,13 @@ def in_range(x,y):
     return 0<=x<n and 0<=y<m
 
 for i in range(2,n*m+1):
-    nx,ny = x + dxs[dir], y + dys[dir]
+    nx,ny = x + dxs[dir], y + dys[dir] # 미리 갈 곳을 검사하는 테스트 좌표
 
-    if not in_range(nx,ny) or arr[nx][ny] != 0:
+    if not in_range(nx,ny) or arr[nx][ny] != 0: # 갈 곳이 범위 밖인지 아니면 이미 자리가 있는지 확인하는 조건문
         dir = (dir+1)%4
 
-    x,y =  x + dxs[dir], y + dys[dir]
-    arr[x][y] = i
+    x,y =  x + dxs[dir], y + dys[dir] # 안전한 걸 확인 후 가는 찐좌표
+    arr[x][y] = i 
 
 for i in range(n):
     for j in range(m):
