@@ -31,7 +31,6 @@ for i in range(N):
         if x == 0 and y == 0:
             ans = cnt
             break
-    if x == 0 and y == 0:
-        ans = cnt
+    if ans != -1:
         break
 print(ans)
