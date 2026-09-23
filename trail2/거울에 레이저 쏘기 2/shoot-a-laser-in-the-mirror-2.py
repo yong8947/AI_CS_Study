@@ -30,13 +30,13 @@ while in_range(x,y):
     else:
         # dir_num = dir_num ^ 1 >> 비트연산자로 하면 편함 근데 난 몰랐으니 패스
         if dir_num == 1:
-            dir_num = 2
-        elif dir_num == 2:
-            dir_num = 1
-        elif dir_num == 0:
-            dir_num = 3
-        else:
             dir_num = 0
+        elif dir_num == 2:
+            dir_num = 3
+        elif dir_num == 0:
+            dir_num = 1
+        else:
+            dir_num = 2
 
     cnt+=1
 
