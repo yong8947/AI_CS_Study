@@ -3,9 +3,7 @@ A = list(map(int, input().split()))
 B = list(map(int, input().split()))
 
 # Please write your code here.
-if N<M:
-    print(0)
-    
+
 ans = 0
 
 for i in range(N-M+1):
