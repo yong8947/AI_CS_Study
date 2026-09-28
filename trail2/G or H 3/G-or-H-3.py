@@ -17,7 +17,7 @@ for i in range(n):
 
 ans = 0
 
-for i in range(len(arr)-k):
+for i in range(1,max(x)-k+1):
     cnt = 0
     for j in range(i,i+k+1):
         cnt += arr[j]
