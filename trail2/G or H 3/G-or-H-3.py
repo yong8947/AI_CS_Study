@@ -7,7 +7,7 @@ for _ in range(n):
     c.append(char)
 
 # Please write your code here.
-arr = [0] * (max(x)+1)
+arr = [0] * (max(x)+k+1)
 
 for i in range(n):
     if c[i] == 'G':
@@ -17,7 +17,7 @@ for i in range(n):
 
 ans = 0
 
-for i in range(1,max(x)-k+1):
+for i in range(1,max(x)+1):
     cnt = 0
     for j in range(i,i+k+1):
         cnt += arr[j]
