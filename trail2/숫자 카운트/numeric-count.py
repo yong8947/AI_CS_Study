@@ -34,5 +34,13 @@ for i in range(1,10):
                     if k == c1: cnt11 += 1 
 
                     if i == b1 or i == c1: cnt22 += 1
-                    if i == b1 or i == c1: cnt22 += 1
-                    
+                    if j == a1 or j == c1: cnt22 += 1
+                    if k == b1 or k == a1: cnt22 += 1
+
+                    if cnt11 != target_cnt1 or cnt22 != target_cnt2:
+                        is_possible = False
+
+                if is_possible:
+                    ans += 1
+
+print(ans)
