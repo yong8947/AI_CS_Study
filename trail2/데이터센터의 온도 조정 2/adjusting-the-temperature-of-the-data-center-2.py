@@ -14,7 +14,7 @@ def temp_select(t):
     return cnt
 
 ans = 0
-for i in range(1002):
+for i in range(-1,1002):
     ans = max(ans, temp_select(i))
 
 print(ans)
