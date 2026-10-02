@@ -14,7 +14,7 @@ def temp_select(t):
     return cnt
 
 ans = 0
-for i in range(-1,1002):
+for i in range(-1,1002): # 0도 미만일 경우와 1000도 초과일 경우도 생각해야됌 !
     ans = max(ans, temp_select(i))
 
 print(ans)
