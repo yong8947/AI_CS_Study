@@ -1,5 +1,5 @@
 def solution(players, callings):
-    p = {name:i for i,name in enumerate(players)}
+    p = {name:i for i,name in enumerate(players)} # .index()로 찾기엔 배열길이때문에 시간초과될 수 있어서 딕셔너리 사용 ** 이 문제의 핵심 시간관리
     
     for name in callings:
         rank_now = p[name] # 현재 위치 
