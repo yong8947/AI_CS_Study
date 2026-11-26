@@ -18,3 +18,36 @@ def solution(babbling):
             cnt += 1
             
     return cnt
+
+
+"""
+제미나이피셜 : 가장 이상적인 코드
+
+def solution(babbling):
+    sounds = ("aya", "ye", "woo", "ma")
+    count = 0
+
+    for word in babbling:
+        idx = 0
+        prev = ""
+        n = len(word)
+
+        while idx < n:
+            matched = ""
+            for s in sounds:
+                if s != prev and word.startswith(s, idx):
+                    matched = s
+                    break
+
+            if not matched:
+                break
+
+            prev = matched
+            idx += len(matched)
+
+        if idx == n:
+            count += 1
+
+    return count
+
+"""
